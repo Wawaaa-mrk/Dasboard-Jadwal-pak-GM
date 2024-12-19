@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input Jadwal GM - InJourney Airport</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="pic/Logo bandara.png" alt="InJourney Airport Logo" class="logo">
+            <h1>Input Jadwal General Manager</h1>
+        </header>
+        <form id="schedule-form">
+            <label for="tanggal">Tanggal:</label>
+            <input type="date" id="tanggal" required>
+
+            <label for="jam-mulai">Jam Mulai:</label>
+            <input type="time" id="jam-mulai" required>
+
+            <label for="jam-selesai">Jam Selesai:</label>
+            <input type="time" id="jam-selesai" required>
+
+            <label for="peserta">Peserta:</label>
+            <input type="text" id="peserta" placeholder="Masukkan Nama Peserta" required>
+
+            <label for="rincian">Rincian Kegiatan:</label>
+            <textarea id="rincian" placeholder="Masukkan Rincian Kegiatan" required></textarea>
+
+            <button type="submit">Tambah Jadwal</button>
+        </form>
+        <a href="hasil-jadwal.html" class="view-schedule-button">Lihat Jadwal</a>
+        <a href="sesudah.html" class="view-schedule-button">Lihat Jadwal Selesai</a>
+    </div>
+    <script src="script-input.js"></script>
+</body>
+</html>
